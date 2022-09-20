@@ -14,14 +14,14 @@ variable "appservice_name" {
 }
 
 variable "kind" {
-  type = string
+  type        = string
   description = "The kind of the App Service Plan to create. Possible values are Windows (also available as App), Linux, elastic (for Premium Consumption) and FunctionApp (for a Consumption Plan). Defaults to Windows"
 }
 
 variable "reserved" {
-  type = bool
+  type        = bool
   description = "Is this App Service Plan Reserved. Defaults to false."
-  default = true
+  default     = true
 }
 
 variable "sku_tier" {

@@ -10,3 +10,4 @@ resource "azurerm_app_service_plan" "appservice" {
     size = var.sku_size
   }
 }
+
