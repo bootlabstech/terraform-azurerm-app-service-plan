@@ -21,7 +21,7 @@ variable "kind" {
 variable "reserved" {
   type        = bool
   description = "Is this App Service Plan Reserved. Defaults to false."
-  default     = true
+
 }
 
 variable "sku_tier" {
