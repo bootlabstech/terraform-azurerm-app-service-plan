@@ -8,7 +8,7 @@ variable "location" {
   description = "location of the resource group"
 }
 
-variable "appservice_name" {
+variable "name" {
   type        = string
   description = "name of the azurerm_app_service_plan"
 }
@@ -21,6 +21,7 @@ variable "kind" {
 variable "reserved" {
   type        = bool
   description = "Is this App Service Plan Reserved. Defaults to false."
+  default = true
 
 }
 
