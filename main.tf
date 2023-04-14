@@ -1,13 +1,12 @@
-resource "azurerm_app_service_plan" "appservice" {
+# Creates a App Service Plan
+resource "azurerm_service_plan" "appservice" {
   name                = var.name
   location            = var.location
+  os_type             = var.os_type
   resource_group_name = var.resource_group_name
-  kind                = var.kind
-  reserved            = var.reserved
+  sku_name            = var.sku_name 
+  worker_count        = var.worker_count
+  zone_balancing_enabled = var.zone_balancing_enabled
+  per_site_scaling_enabled = var.per_site_scaling_enabled
 
-  sku {
-    tier = var.sku_tier
-    size = var.sku_size
-  }
 }
-
