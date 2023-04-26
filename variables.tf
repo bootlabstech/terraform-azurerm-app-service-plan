@@ -32,11 +32,13 @@ variable "worker_count" {
 }
 
 variable "zone_balancing_enabled" {
-  type        = string
+  type        = bool
   description = "location of the resource group"
+  default = true
 }
 
 variable "per_site_scaling_enabled" {
-  type        = string
+  type        = bool
   description = "name of the azurerm_app_service_plan"
+  default = true
 }
