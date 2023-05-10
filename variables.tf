@@ -34,7 +34,7 @@ variable "worker_count" {
 variable "zone_balancing_enabled" {
   type        = bool
   description = "location of the resource group"
-  default = true
+  default     = false
 }
 
 variable "per_site_scaling_enabled" {
